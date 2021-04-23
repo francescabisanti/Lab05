@@ -38,6 +38,7 @@ public class FXMLController {
     @FXML
     void doCalcolaAnagrammi(ActionEvent event) {
     	this.txtCorretti.clear();
+    	this.txtErrati.clear();
     	String parola= this.txtParola.getText();
     	List <String> risultatoCorretti= new ArrayList <String>();
     	risultatoCorretti= this.model.anagrammiCorretti(parola);
@@ -56,6 +57,7 @@ public class FXMLController {
     @FXML
     void doReset(ActionEvent event) {
     	this.txtCorretti.clear();
+    	this.txtErrati.clear();
     }
     
     public void setModel( Model m) {
